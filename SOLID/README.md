@@ -49,7 +49,7 @@ class EmailService {
 }
 ```
 Al separar las preocupaciones, cada clase ahora tiene una única responsabilidad: administrar los datos del usuario, guardarlos en la base de datos y enviar correos electrónicos.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 ## Open/Closed Principle (OCP)
 En español `Principio abierto/cerrado`, establece que las entidades de software deben estar abiertas a la extensión pero cerradas a la modificación. Esto fomenta el uso de abstracciones e interfaces. He aquí un ejemplo:
@@ -95,7 +95,7 @@ class Circle extends Shape {
 }
 ```
 Ahora puedes agregar fácilmente nuevas formas sin modificar la clase `AreaCalculator`.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 ## Liskov's Substitution Principle (LSP)
 En español `Principio de Sustitución de Liskov`, establece que los objetos de una superclase deben ser reemplazables por objetos de una subclase sin afectar la corrección del programa. Considere el siguiente ejemplo:
@@ -131,7 +131,7 @@ class Penguin extends Bird {
 }
 ```
 Al adherirse a LSP, se asegura de que las subclases se puedan usar indistintamente con su clase base.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 ## Interface Segregation Principle (ISP)
 En español `Principio de Segregación de Interfaces`, establece que no se debe obligar a una clase a implementar interfaces que no utiliza. En JavaScript no existen interfaces estrictas, pero podemos crear estructuras similares:
@@ -167,7 +167,7 @@ class Worker implements Workable, Eatable {
 }
 ```
 Al dividir las interfaces en otras más pequeñas, las clases pueden implementar sólo lo que necesitan.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 ## Dependency Inversion Principle (DIP)
 En español `Principio de Inversión de Dependencia`, establece que los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deberían depender de abstracciones. Considere este ejemplo:
@@ -231,8 +231,8 @@ class Switch {
 }
 ```
 Ahora, la clase `Switch` depende de una abstracción (`Switchable`) en lugar de una implementación concreta.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 ## Conclusión
 En conclusión, la aplicación de principios `SOLID` en JavaScript y Node.js conduce a un código más modular, escalable y mantenible. Al comprender e implementar estos principios, los desarrolladores pueden crear arquitecturas de software sólidas y flexibles.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
